@@ -1,0 +1,230 @@
+/* styles.css */
+
+/* General styles */
+.mainn {
+    font-family: Arial, sans-serif; /* Example font */
+    margin-top: 60px; /* Adjusted margin-top */
+    min-height: calc(100vh - 200px); 
+    width: 100%;
+    margin-left: 10px;
+  }
+  
+  /* Navbar styles */
+  .navbar {
+    background-color: #333; /* Dark grey background */
+    padding: 10px 20px; /* Padding around navbar items */
+  }
+  .conButton {
+    background-color: #0c031c; /* Dark grey background */
+    color: white;
+    padding: 10px 20px; /* Padding around navbar items */
+    border-radius: 10px; 
+    padding: 10px 20px; /* Padding inside button */
+    cursor: pointer; /* Pointer cursor on hover */
+    transition: background-color 0.3s ease;
+  }
+  .conButton:hover {
+    background-color: #a7870a; /* Lighter yellow on hover */
+}
+  .normBtn {
+    background-color: #0e0a20; /* Dark grey background */
+    padding: 10px 50px; /* Padding around navbar items */
+    color: white; /* Text color set to white */
+    border-radius: 10px; /* Rounded edges */
+    cursor: pointer;
+  }
+  .normBtn:hover {
+    background-color: #020c63; /* Darker blue on hover */
+  }
+  .firsttwoBtn {
+    display: flex;
+    justify-content: space-between; /* Space out navbar items */
+    background-color: rgb(12, 8, 68); /* Background color set to light blue */
+    margin-left: 10px; 
+  }
+  
+  .navbar.container {
+    display: flex;
+    justify-content: space-between; /* Space out navbar items */
+  }
+  
+  .navbar.navbar-brand h1 {
+    color: white; /* White text for brand */
+    margin: 0; /* Remove default margin */
+  }
+  
+  .navbar.navbar-end {
+    display: flex;
+    gap: 10px; /* Space between end items */
+  }
+  
+  /* Button styles */
+  .button {
+    background-color: #007bff; /* Blue background */
+    color: white; /* White text */
+    border: none; /* No border */
+    padding: 10px 20px; /* Padding inside button */
+    cursor: pointer; /* Pointer cursor on hover */
+    transition: background-color 0.3s ease; /* Smooth background color transition */
+  }
+ 
+  .button:hover {
+    background-color: #0056b3; /* Darker blue on hover */
+  }
+  .remBtn {
+    background-color: #130e24; /* Blue background */
+    color: white; /* White text */
+    border: none; /* No border */
+    padding: 10px 20px; /* Padding inside button */
+    cursor: pointer; /* Pointer cursor on hover */
+    transition: background-color 0.3s ease; /* Smooth background color transition */
+    border-radius: 10px;
+  }
+  .remBtn:hover {
+    background-color: #e11010; /* Darker blue on hover */
+  }
+  .r
+  
+  /* Input styles */
+  .inputt {
+    padding: 10px; /* Padding inside input */
+    margin: 50px 0; /* Margin above and below input */
+    border-radius: 5px; /* Rounded corners */
+    border: 1px solid #ccc; /* Light grey border */
+    margin-bottom: 10px;
+    margin-top: 60px;
+    width: 100%; /* Fills the available screen width on smaller screens */
+    margin-left: 400px; /* Adjusted to add a horizontal separation to the left */
+    margin-right: 10px; 
+}
+
+@media (min-width: 180px) { /* Assuming 768px as the breakpoint for large screens */
+   .inputt {
+    margin-left: 20px;
+        width: 180px; /* Size is 80px for large screens */
+        margin-top: 10px;
+        margin-bottom: 10px;
+    }
+}
+.Controll {
+  display: flex; /* Enables Flexbox layout */
+  flex-wrap: wrap; /* Allows the items to wrap onto multiple lines */
+  justify-content: space-between; /* Distributes items evenly in the container */
+  gap: 100px; /* Adds a small gap between each element */
+
+}
+.controls {
+  display: flex; /* Enables Flexbox layout */
+  background-color: rgb(12, 8, 68); ;
+  flex-direction: column; /* Stacks the items vertically */
+  gap: 10px; /* Adds a small gap between each input */
+  width: 100%; /* Ensures the container takes up the full width available */
+ 
+}
+.fieldf {
+  display: flex; /* Enables Flexbox layout */
+  justify-content: space-between; /* Distributes items evenly in the container */
+  gap: 100px; /* Adds a small gap between each element */
+  margin-bottom: 20px; /* Adds a gap below the container */
+  width: 50%; 
+  margin-left: 10px; 
+  margin-top: 10px; /* Adds a 10px gap above the.Controll div */
+}
+.fieldff {
+  display: flex; /* Enables Flexbox layout */
+  background-color: rgb(12, 8, 68);;
+  /* Distributes items evenly in the container */
+  gap: 100px; /* Adds a small gap between each element */
+  margin-bottom: 20px; /* Adds a gap below the container */
+  width: 90%; 
+  margin-left: 10px; 
+}
+  /* Section styles */
+  .section {
+    margin-top: 20px; /* Space above sections */
+  }
+  
+  /* Table styles */
+  
+  #asksTable {
+    width: 100%; /* Full width */
+    border-collapse: collapse; /* Collapse borders */
+}
+
+#asksTable tr:nth-child(odd) {
+    background-color: #add8e6; /* Light blue */
+}
+
+#asksTable tr:nth-child(even) {
+    background-color: #87ceeb; /* Sky blue */
+}
+#tableBids {
+  width: 100%; /* Full width */
+  border-collapse: collapse; /* Collapse borders */
+}
+
+#tableBids tr:nth-child(odd) {
+  background-color: #add8e6; /* Light blue */
+}
+
+#tableBids tr:nth-child(even) {
+  background-color: #87ceeb; 
+}
+
+  
+  .tablebids th,
+  .tablebids td,
+  #tableBids th,
+  #tableBids td,
+  #asksTable th,
+  #asksTable td {
+    border: 1px solid #ddd; /* Grey border */
+    padding: 8px; /* Padding inside cells */
+    text-align: left; /* Align text to the left */
+  }
+  
+  /* Error and success messages */
+  .container.has-text-danger p,
+  .container.has-text-success p {
+    margin-top: 10px; /* Space above messages */
+  }
+  /* Target the div with class 'coms' *//* Target the div with class 'coms' */
+
+/* Target the div with class 'button-input-group' */
+.button-input-group {
+  display: flex;
+  margin-left: 10px;
+  gap: 10px; /*align-items: center; Adjust the gap between the button and input */
+}
+
+/* Target the buttons with class 'normBtn' */
+.coms.normBtn {
+  margin: 5px 0; /* Adds a small margin above and below the buttons */
+}
+
+/* Target the input fields */
+.coms input[type="number"] {
+  width: 200px; /* Adjust the width of the input fields */
+  padding: 5px; /* Adds some padding inside the input fields */
+}
+/* Target the div with class 'coms' */
+.me {
+
+  background-color: rgb(12, 8, 68);;
+}
+
+/* Target the div with class 'button-input-group' */
+.button-input-group {
+  display: flex;
+  margin: 10;
+  margin-bottom: 10px;
+  gap: 100px; /* Adjust the gap between the button and input */
+}
+
+
+/* Target the input fields */
+.coms input[type="number"] {
+  width: 200px; /* Adjust the width of the input fields */
+  padding: 5px; /* Adds some padding inside the input fields */
+  margin-right: 30%;
+}
